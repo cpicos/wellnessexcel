@@ -6,6 +6,8 @@
   <title>Wellness Excel | The Art of Aesthetics</title>
   <meta name="description" content="Medical Spa en Tijuana con tratamientos faciales, corporales y procedimientos estéticos avanzados. Reserva tu cita en Wellness Excel." />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
   <!-- Optional Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,181 +17,151 @@
 <body>
   <!-- Header -->
   <header class="topbar">
-    <nav class="nav" aria-label="Primary">
-      <div class="brand">
-        <div class="logo" aria-hidden="true">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 3c4.97 0 9 4.03 9 9s-4.03 9-9 9S3 16.97 3 12 7.03 3 12 3Z" stroke="#1d3124" stroke-width="1.5"/>
-            <path d="M8 13c1.5-2 3.5-3 6-3 1.5 0 3 .5 4 1.5" stroke="#1d3124" stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
+    <!-- Barra superior -->
+    <div class="top-info-wrapper">
+      <div class="top-info">
+        <span class="phone">CALL US AT <a href="tel:+18583743601">+1 858 374 3601</a></span>
+        <div class="social-icons">
+          <a href="https://instagram.com/wellnessexcel" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://facebook.com/wellnessexcel" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://wa.me/18583743601" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         </div>
-        Wellness Excel
       </div>
+    </div>
 
-      <input type="checkbox" id="nav-toggle" />
-      <label for="nav-toggle" class="hamb" aria-label="Abrir menú"><span></span></label>
+    <hr>
+    <!-- Contenedor con el 90% de ancho -->
+    <div class="nav-wrapper">
+      <nav class="nav" aria-label="Primary">
+        <div class="brand">
+          <div class="logo" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 3c4.97 0 9 4.03 9 9s-4.03 9-9 9S3 16.97 3 12 7.03 3 12 3Z"
+                stroke="#1d3124" stroke-width="1.5" />
+              <path d="M8 13c1.5-2 3.5-3 6-3 1.5 0 3 .5 4 1.5" stroke="#1d3124"
+                stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </div>
+          Wellness Excel
+        </div>
 
-      <div class="menu">
-        <a href="#inicio">Inicio</a>
-        <a href="#por-que">Por qué nosotros</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#ofertas">Paquetes</a>
-        <a href="#reserva">Reservación</a>
-        <a href="#ubicacion">Ubicación</a>
-        <a href="#faqs">FAQs</a>
-        <a href="#contacto" class="btn cta">Book Now</a>
-      </div>
-    </nav>
+        <input type="checkbox" id="nav-toggle" />
+        <label for="nav-toggle" class="hamb" aria-label="Abrir menú"><span></span></label>
+
+        <div class="menu">
+          <a href="#inicio">Inicio</a>
+          <a href="#por-que">Por qué nosotros</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#ofertas">Paquetes</a>
+          <a href="#reserva">Reservación</a>
+          <a href="#ubicacion">Ubicación</a>
+          <a href="#faqs">FAQs</a>
+          <a href="#contacto" class="cta">BOOK YOUR APPOINTMENT</a>
+        </div>
+      </nav>
+    </div>
   </header>
 
   <!-- Hero -->
   <section id="inicio" class="hero">
     <div class="container wrap">
-      <div>
-        <span class="pill">The Art of Aesthetics</span>
-        <h1>Your beauty, our passion.</h1>
-        <p class="lead">Medical Spa at exceptional value — Tratamientos estéticos de alta calidad para resaltar tu belleza natural en Hospital Excel, Tijuana.</p>
-        <div class="actions">
-          <a href="#reserva" class="btn btn-primary">Reservar ahora</a>
-          <a href="#servicios" class="btn btn-outline">Ver servicios</a>
-        </div>
-      </div>
-      <div class="hero-card">
-        <h3>¿Por qué elegirnos?</h3>
-        <ul>
-          <li><strong>Expertos en estética:</strong> tratamientos personalizados por profesionales altamente capacitados.</li>
-          <li><strong>Tecnología avanzada:</strong> equipos de última generación para resultados seguros y eficaces.</li>
-          <li><strong>Ambiente relajante:</strong> instalaciones modernas y exclusivas.</li>
-        </ul>
-        <div style="margin-top:.75rem"><span class="tag">Cerca de la frontera 🇺🇸🇲🇽</span></div>
-      </div>
+      <h1>The Art of Aesthetics</h1>
     </div>
   </section>
+
+  <!-- Value Section -->
+<section id="value" class="value">
+  <div class="container grid-2">
+    <div class="value-text">
+      <h2>Medical Spa</h2>
+      <h3>At exceptional value</h3>
+      <p>
+        At Wellness Excel, we specialize in <br>
+        providing high-quality aesthetic <br>
+        treatments that will help enhance <br>
+        your natural beauty.
+      </p>
+      <p>
+        Located at Hospital Excel, Tijuana, our <br>
+        goal is to offer you a unique, accessible, <br>
+        and effective experience.
+      </p>
+    </div>
+    <div class="value-media">
+      <div class="top-img"
+        style="background-image:url('https://images.unsplash.com/photo-1596755389378-c31d21fd1273?q=80&w=800&auto=format&fit=crop');">
+      </div>
+      <div class="bottom">
+        <div class="face-img"
+          style="background-image:url('https://images.unsplash.com/photo-1596755389378-c31d21fd1273?q=80&w=800&auto=format&fit=crop');">
+        </div>
+        <div class="tagline">
+          <span>your beauty,</span><br>
+          <strong>our passion</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <!-- Why Choose Us -->
   <section id="por-que">
     <div class="container">
       <div class="section-title">
         <h2>Why choose us</h2>
-        <span class="muted">Excelencia, innovación y bienestar</span>
       </div>
       <div class="grid-3">
         <div class="card">
           <div class="icon" aria-hidden="true">💆‍♀️</div>
           <h3>Aesthetic Experts</h3>
-          <p>Profesionales con años de experiencia en estética y wellness, enfocados en tus necesidades.</p>
+          <p>Our team of professionals is highly trained to provide personalized treatmets that meet your individual needs.</p>
         </div>
         <div class="card">
           <div class="icon" aria-hidden="true">🧪</div>
           <h3>Advanced Technology</h3>
-          <p>Radiofrecuencia, LED, Hydrafacial, microdermoabrasión y más para resultados visibles.</p>
+          <p>We use state-of-the-art equipment to ensure every treatment is sage, effective and comfortable.</p>
         </div>
         <div class="card">
           <div class="icon" aria-hidden="true">🏝️</div>
           <h3>Relaxing Environment</h3>
-          <p>Un espacio diseñado para la calma: luz natural, aromas y música suave.</p>
+          <p>Our modern facilities offer a tranquil and exclusive setting where you can feel completely at ease.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Services -->
-  <section id="servicios" style="background:var(--pearl)">
+  <section id="servicios" class="services">
     <div class="container">
-      <div class="section-title">
-        <h2>Our Services</h2>
-        <div class="tabs">
-          <span class="chip">Facial Treatments</span>
-          <span class="chip">Body Treatments</span>
-          <span class="chip">Advanced Aesthetic Procedures</span>
-          <span class="chip">Spa Day Experience ✨</span>
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <!-- Servicio 1 -->
+        <div class="service-card" style="background-image:url('https://images.unsplash.com/photo-1596755389378-c31d21fd1273?q=80&w=800&auto=format&fit=crop');">
+          <div class="overlay">
+            <h3>FACIAL<br>TREATMENTS</h3>
+            <p>From deep cleansing to innovative rejuvenating treatments like radiofrequency and microdermabrasion.</p>
+          </div>
+        </div>
+        <!-- Servicio 2 -->
+        <div class="service-card" style="background-image:url('https://images.unsplash.com/photo-1596755389378-c31d21fd1273?q=80&w=800&auto=format&fit=crop');">
+          <div class="overlay">
+            <h3>RELAXING<br>MASSAGES</h3>
+            <p>Enjoy a relaxing experience that will relieve tension and promote your overall wellness.</p>
+          </div>
+        </div>
+        <!-- Servicio 3 -->
+        <div class="service-card" style="background-image:url('https://images.unsplash.com/photo-1596755389378-c31d21fd1273?q=80&w=800&auto=format&fit=crop');">
+          <div class="overlay">
+            <h3>BODY<br>TREATMENTS</h3>
+            <p>Body contouring with radiofrequency and other specialized procedures to deliver visible results.</p>
+          </div>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="services-grid">
-        <!-- Faciales -->
-        <article class="card service">
-          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1585912812840-b457972f28d1?q=80&w=800&auto=format&fit=crop');"></div>
-          <div>
-            <h3>Deep Cleansing Facial</h3>
-            <p>Purifica y revitaliza tu piel con limpieza profunda.</p>
-          </div>
-        </article>
-        <article class="card service">
-          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?q=80&w=800&auto=format&fit=crop');"></div>
-          <div>
-            <h3>Acne Treatment Facial</h3>
-            <p>Tratamiento focalizado para una tez más clara.</p>
-          </div>
-        </article>
-        <article class="card service">
-          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1620912189865-f61b3d68fbfc?q=80&w=800&auto=format&fit=crop');"></div>
-          <div>
-            <h3>Lifting Facial (RF)</h3>
-            <p>Reafirma y suaviza líneas finas con radiofrecuencia.</p>
-          </div>
-        </article>
-        <article class="card service">
-          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1594824476958-48c8b964273d?q=80&w=800&auto=format&fit=crop');"></div>
-          <div>
-            <h3>Hydrafacial</h3>
-            <p>Hidratación profunda y glow inmediato.</p>
-          </div>
-        </article>
-        <article class="card service">
-          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1544168190-79c17527004f?q=80&w=800&auto=format&fit=crop');"></div>
-          <div>
-            <h3>Lumi Facial (LED)</h3>
-            <p>Fototerapia LED para rejuvenecimiento y reparación.</p>
-          </div>
-        </article>
-
-        <!-- Corporales -->
-        <article class="card service">
-          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=800&auto=format&fit=crop');"></div>
-          <div>
-            <h3>Relaxing Body Massage</h3>
-            <p>Libera tensión y encuentra un descanso profundo.</p>
-          </div>
-        </article>
-        <article class="card service">
-          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1556228453-efd1f2d60221?q=80&w=800&auto=format&fit=crop');"></div>
-          <div>
-            <h3>Body Contouring (RF)</h3>
-            <p>Moldea y tonifica con radiofrecuencia corporal.</p>
-          </div>
-        </article>
-
-        <!-- Avanzados -->
-        <article class="card service">
-          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1560976819-63a6f162a0fd?q=80&w=800&auto=format&fit=crop');"></div>
-          <div>
-            <h3>Plasma Plus Therapy</h3>
-            <p>Estimula colágeno y rejuvenece tu piel.</p>
-          </div>
-        </article>
-        <article class="card service">
-          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=800&auto=format&fit=crop');"></div>
-          <div>
-            <h3>Hollywood Peel</h3>
-            <p>Piel más suave y luminosa al instante.</p>
-          </div>
-        </article>
-        <article class="card service">
-          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1579722820308-3a46e4f9a7a2?q=80&w=800&auto=format&fit=crop');"></div>
-          <div>
-            <h3>Microdermabrasion</h3>
-            <p>Exfoliación suave para un look renovado.</p>
-          </div>
-        </article>
-        <article class="card service">
-          <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1605100804763-3a0b6b0a0f76?q=80&w=800&auto=format&fit=crop');"></div>
-          <div>
-            <h3>Skin Tag & Wart Removal</h3>
-            <p>Remoción segura y rápida de imperfecciones.</p>
-          </div>
-        </article>
-      </div>
 
       <div style="margin-top:1.25rem; text-align:center">
         <a href="#reserva" class="btn btn-primary">Book Your Appointment Today</a>
